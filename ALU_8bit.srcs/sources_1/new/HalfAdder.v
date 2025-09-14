@@ -12,6 +12,7 @@ module HalfAdder(
 
     );
     
+    // boolean expression for sum and carry
     assign sum = x ^ y;   
     assign carry = x & y;   
     
