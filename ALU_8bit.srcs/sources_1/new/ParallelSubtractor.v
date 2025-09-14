@@ -26,8 +26,8 @@ module ParallelSubtractor(
             FullAdder fa(.x(A[i]),
                          .y(~B[i]),
                          .z(bin[i]),
-                         .s(D[i]),
-                         .c(bin[i+1]));
+                         .sum(D[i]),
+                         .carry(bin[i+1]));
         
         end
     

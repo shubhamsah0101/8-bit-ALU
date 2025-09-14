@@ -2,7 +2,7 @@
 
 `timescale 1ns / 1ps
 
-module Div4bit(
+module Divider(
     
     // inputs
     input [7:0] A, B,          // Dividend, Divisor
@@ -31,8 +31,10 @@ module Div4bit(
                 // If remainder is negative, restore
                 rem = rem + {1'b0, B};
                 Q[i] = 0;
+                
             end else begin
                 Q[i] = 1;
+                
             end
         end
         

@@ -24,8 +24,8 @@ module ParallelAdder(
             FullAdder fa(.x(A[i]), 
                          .y(B[i]), 
                          .z(cin[i]),
-                         .s(sum[i]),
-                         .c(cin[i+1]));
+                         .sum(sum[i]),
+                         .carry(cin[i+1]));
         
         end
     
